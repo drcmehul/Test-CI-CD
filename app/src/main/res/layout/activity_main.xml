@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvCurrentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvLiveData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Hello World!" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLiveData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Live Data" />
+
+            <TextView
+                android:id="@+id/tvStateFlow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:text="Hello World!" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnStateFlow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="State Flow" />
+
+            <TextView
+                android:id="@+id/tvFlow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:text="Hello World!" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnFlow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flow" />
+
+            <TextView
+                android:id="@+id/tvSharedFlow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:text="Hello World!" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSharedFlow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shared Flow" />
+
+            <TextView
+                android:id="@+id/tvHigherOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:text="Hello World!" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnHigherOrderFunction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Higher Order Function" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginTop="10dp"
+                android:id="@+id/btnFlowLongRunningTask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Long running task" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
