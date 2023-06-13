@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "FlowExample"
+rootProject.name = "Test-CI-CD"
 include ':app'
